@@ -1,8 +1,3 @@
-<html>
-<head>
-	<title>Silence</title>
-	</head>
-
 <body>  
 # TITRE
 
@@ -46,7 +41,7 @@
     <span id="progressTime">00:00</span>
 </div>
 
-<script>
+<script src="js/silence.js" type="text/javascript"></script>
 var player = document.querySelector('#audioPlayer');
 
 function play(idPlayer, control) {
