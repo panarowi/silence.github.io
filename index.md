@@ -13,4 +13,4 @@
 
 ## MEDIAFILE
 
-<audio src="./media/Rec-19.10.24-14h20m56s.aif"></audio>
+<audio src="media/Rec-19.10.24-14h20m56s.aif" controls></audio>
