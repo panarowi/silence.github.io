@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <body>
-    
+
+
+<body>  
 # TITRE
 
 ## sous-titre
@@ -42,7 +41,7 @@
     </div>
 </div>
 
-<script src="./js/silence.js" type="text/javascript"></script>
+<script src="js/silence.js" type="text/javascript"></script>
 
 </body>
 </html>
