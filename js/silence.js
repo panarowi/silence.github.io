@@ -32,7 +32,7 @@ function update(player) {
     var percent  = Math.ceil(fraction * 100);
 
     var progress = document.querySelector('#progressBar');
-	
+	document.querySelector('#progressTime').textContent = formatTime(time);
     progress.style.width = percent + '%';
     progress.textContent = percent + '%';
 }
@@ -53,4 +53,36 @@ function formatTime(time) {
     } else {
         return mins + ":" + secs; // mm:ss
     }
+}
+
+function getMousePosition(event) {
+    return {
+        x: event.pageX,
+        y: event.pageY
+    };
+}
+
+function getPosition(element){
+    var top = 0, left = 0;
+    
+    do {
+        top  += element.offsetTop;
+        left += element.offsetLeft;
+    } while (element = element.offsetParent);
+    
+    return { x: left, y: top };
+}
+
+function clickProgress(idPlayer, control, event) {
+    var parent = getPosition(control);    // La position absolue de la progressBar
+    var target = getMousePosition(event); // L'endroit de la progressBar où on a cliqué
+    var player = document.querySelector('#' + idPlayer);
+  
+    var x = target.x - parent.x; 
+    var wrapperWidth = document.querySelector('#progressBarControl').offsetWidth;
+    
+    var percent = Math.ceil((x / wrapperWidth) * 100);    
+    var duration = player.duration;
+    
+    player.currentTime = (duration * percent) / 100;
 }
