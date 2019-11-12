@@ -22,25 +22,9 @@
     <source src="media/4 - Towers Of Nebula.mp3">
 </audio>
 
-<button class="control" onclick="play('audioPlayer', this)">Play</button>
-<button class="control" onclick="resume('audioPlayer')">Stop</button>
+<div id="waveform"></div>
 
-<span class="volume">
-    <a class="stick1" onclick="volume('audioPlayer', 0)"></a>
-    <a class="stick2" onclick="volume('audioPlayer', 0.3)"></a>
-    <a class="stick3" onclick="volume('audioPlayer', 0.5)"></a>
-    <a class="stick4" onclick="volume('audioPlayer', 0.7)"></a>
-    <a class="stick5" onclick="volume('audioPlayer', 1)"></a>
-</span>
+<script src="https://unpkg.com/wavesurfer.js"></script>
 
-<div>
-    <div id="progressBarControl">
-        <div id="progressBar"
-             onclick="clickProgress('audioPlayer', this, event)">Pas de lecture</div>
-    </div>
-    <span id="progressTime">00:00</span>
-</div>
-
-<script src="js/silence.js" type="text/javascript"></script>
 
 </body>
