@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <body>
 # TITRE
 
 ## sous-titre
@@ -17,4 +20,28 @@
 
 ## MEDIAFILE
 
-<audio src="media/4 - Towers Of Nebula.mp3" controls></audio>
+<audio id="audioPlayer" ontimeupdate="update(this)">
+    <source src="media/4 - Towers Of Nebula.mp3">
+</audio>
+
+<button class="control" onclick="play('audioPlayer', this)">Play</button>
+<button class="control" onclick="resume('audioPlayer')">Stop</button>
+
+<span class="volume">
+    <a class="stick1" onclick="volume('audioPlayer', 0)"></a>
+    <a class="stick2" onclick="volume('audioPlayer', 0.3)"></a>
+    <a class="stick3" onclick="volume('audioPlayer', 0.5)"></a>
+    <a class="stick4" onclick="volume('audioPlayer', 0.7)"></a>
+    <a class="stick5" onclick="volume('audioPlayer', 1)"></a>
+</span>
+
+<div>
+    <div id="progressBarControl">
+        <div id="progressBar">Pas de lecture</div>
+    </div>
+</div>
+
+<script src="./js/nvna.js" type="text/javascript"></script>
+
+</body>
+</html>
