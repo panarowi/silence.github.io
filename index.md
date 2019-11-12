@@ -1,4 +1,7 @@
-
+<html>
+<head>
+	<title>Silence</title>
+	</head>
 
 <body>  
 # TITRE
@@ -135,3 +138,4 @@ function clickProgress(idPlayer, control, event) {
 </script>
 
 </body>
+</html>
