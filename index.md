@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<script src="./js/nvna.js" type="text/javascript"></script>
+<script src="js/silence.js" type="text/javascript"></script>
 
 </body>
 </html>
