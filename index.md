@@ -37,7 +37,8 @@
 
 <div>
     <div id="progressBarControl">
-        <div id="progressBar">Pas de lecture</div>
+        <div id="progressBar"
+             onclick="clickProgress('audioPlayer', this, event)">Pas de lecture</div>
     </div>
     <span id="progressTime">00:00</span>
 </div>
