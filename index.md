@@ -39,6 +39,7 @@
     <div id="progressBarControl">
         <div id="progressBar">Pas de lecture</div>
     </div>
+    <span id="progressTime">00:00</span>
 </div>
 
 <script src="js/silence.js" type="text/javascript"></script>
